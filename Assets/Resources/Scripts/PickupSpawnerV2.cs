@@ -15,7 +15,6 @@ public class PickupSpawnerV2 : MonoBehaviour
         signalOver = false;
         //Instantiate<GameObject>(pickupModel, gameObject.transform);
         SpawnPickupStatic(gameObject.transform.position);
-        Debug.Log("Hello world!");
     }
 
     // Update is called once per frame

@@ -183,4 +183,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 3610073660248126906}
-  speed: 5
+  speed: 20
