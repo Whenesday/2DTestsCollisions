@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 14e19e90f0981f242b7d577fe1b0a9c4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ufoModel: {fileID: 3610073660248126911, guid: 6bd4ea8cad1444b4ca61f0f3b9a8de47,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
