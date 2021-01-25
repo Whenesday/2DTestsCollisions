@@ -22,7 +22,7 @@ public class TargetBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Debug.Log("Target HIT!?!");
+            Debug.Log("Target hit, destroying");
             Destroy(collision.gameObject);
             Destroy(gameObject);
             //gameScene.destroyedPickup = gameScene.destroyedPickup + 1;
@@ -33,11 +33,7 @@ public class TargetBehaviour : MonoBehaviour
         if (collision.gameObject.tag == "Ufo")
         {
             Debug.Log("UFO Collided, game over man");
-            // gameOverText.SetActive(true);
-            //spawner.signalOver = true;
             PickupSpawnerV2.signalOver = true;
-            //Debug.Log("SPAWNER signalOver :" + spawner.signalOver);
-            Debug.Log("IMPT - SPAWNER signalOver :" + PickupSpawnerV2.signalOver);
         }
     }
 }

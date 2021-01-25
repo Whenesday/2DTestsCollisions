@@ -18,7 +18,6 @@ public class GameSceneScript : MonoBehaviour
     public GameObject gameoverText;
     public ShooterBehaviour shooterBehaviour;
     public int destroyedPickup;
-    //public GameObject pickup;
     private static GameSceneScript instance;
     private int collisionCount;
     private int triggerCount;
@@ -34,8 +33,6 @@ public class GameSceneScript : MonoBehaviour
         destroyedPickup = 0;
         collisionCount = 0;
         triggerCount = 0;
-
-        Debug.Log("START GameSceneScript - isGameOver:" + newIsGameOver);
     }
 
     // Update is called once per frame
@@ -43,7 +40,6 @@ public class GameSceneScript : MonoBehaviour
     {
         if (newIsGameOver)
         {
-            //Debug.Log("Success log Game Over");
             gameoverText.SetActive(true);
         }
         if (PickupSpawnerV2.signalOver)
@@ -54,23 +50,14 @@ public class GameSceneScript : MonoBehaviour
         {
             Debug.Log("GameSceneScript - isGameOver:" + isGameOver);
             Debug.Log("GameSceneScript - sampleBool:" + sampleBool);
-            //Debug.Log("pickupSpawner - signalOver:" + pickupSpawner.signalOver);
             Debug.Log("pickupSpawner - signalOver:" + PickupSpawnerV2.signalOver);
         }
-        if (Input.GetKeyDown(KeyCode.Insert))
-        {
-            DebugSpawnProjectile(new Vector3(0, 0, 0));
-        }
 
-        }
+    }
 
     public UFOSpawner GetUFOSpawner()
     {
         return ufoSpawner.GetComponent<UFOSpawner>();
-    }
-    public PickupSpawner GetPickupSpawner()
-    {
-        return pickupSpawner.GetComponent<PickupSpawner>();
     }
 
     public GameObject DebugSpawnProjectile(Vector3 spawnPos)
